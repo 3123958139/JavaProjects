@@ -1,3 +1,4 @@
+~~~python
 import os
 
 from scipy import stats
@@ -26,3 +27,7 @@ plt.savefig(os.path.dirname(__file__) + '\\file1_pics\\1.png')
 plt.draw()
 plt.pause(5)
 plt.close()
+
+~~~
+
+![](/file1_pics//1.png)
