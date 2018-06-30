@@ -141,6 +141,10 @@ class Quant(object):
         #
         plt.ylabel('开盘价')
         #
+        plt.text(date[di], int((max + min) / 2),
+                 '\n年化收益率【' + str(rate * 100) + '%】\n' +
+                 '夏普比率【' + str(shape) + '】',
+                 color='blue')
         plt.title('002237',
                   fontdict={'fontsize': 18, 'fontweight': rcParams['axes.titleweight']})
         #
