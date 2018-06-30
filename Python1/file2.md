@@ -1,3 +1,6 @@
+# file2
+
+~~~python
 # coding:utf-8
 import os
 
@@ -172,3 +175,9 @@ class Quant(object):
 
 q = Quant()
 q.Run()
+
+~~~
+
+![](/file2_pics/1.png)
+
+![](/file2_pics/2.jpg)
