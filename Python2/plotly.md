@@ -74,4 +74,4 @@ py.plot(fig)
 
 ~~~
 
-![](src\file\3.png)
+![](/src/file/3.png)
