@@ -74,4 +74,4 @@ py.plot(fig)
 
 ~~~
 
-![](/src/file/3.png)
+![](https://github.com/3123958139/JavaProjects/blob/master/Python2/src/file/3.png)

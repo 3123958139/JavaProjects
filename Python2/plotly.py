@@ -22,7 +22,7 @@ date = df['date'].map(
     lambda x: dt.datetime.strptime(x, '%Y-%m-%d'))  # 日期由str类型修改datetime
 high = df['high']
 volume = df['volume']
-#
+# 标准化
 high_scaled = pc.scale(high)
 volume_scaled = pc.scale(volume)
 #
