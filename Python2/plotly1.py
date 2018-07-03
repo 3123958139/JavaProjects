@@ -3,6 +3,7 @@
 reference:https://plot.ly/python/
 '''
 import datetime as dt
+import pandas as pd
 import plotly.graph_objs as go
 import plotly.offline as py
 import sklearn.preprocessing as pc
@@ -16,7 +17,9 @@ py.init_notebook_mode(connected=True)  # plotly的离线模式，不需要登录
 #=========================================================================
 # 准备交互图表的数据
 #=========================================================================
-df = ts.get_k_data('002237')  # 从tushare下载股票日线数据
+# df = ts.get_k_data('002237')  # 从tushare下载股票日线数据
+df = pd.read_csv(
+    'D:\\Program Files\\eclipse-cpp-oxygen-3a-win32-x86_64\\tmp\\JavaProjects\\Python2\\src\\file\\file2.csv')
 #
 date = df['date'].map(
     lambda x: dt.datetime.strptime(x, '%Y-%m-%d'))  # 日期由str类型修改datetime
