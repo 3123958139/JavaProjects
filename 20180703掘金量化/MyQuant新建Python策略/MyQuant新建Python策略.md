@@ -1888,3 +1888,6 @@ if __name__ == '__main__':
 
 ~~~
 
+![](stock.jpg)
+
+![](future.jpg)
