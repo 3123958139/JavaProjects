@@ -1,0 +1,2 @@
+Import["Mma1.csv",
+    "Table"]
