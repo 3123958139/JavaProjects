@@ -15,12 +15,16 @@ df = pd.read_csv(csvfile)[['date', 'close']]
 date = df['date'].map(lambda x: dt.datetime.strptime(x, '%Y-%m-%d'))
 close = df['close']
 
-cA, cD = pywt.dwt(close, 'db2')
-close_dwt = pywt.idwt(cA, None, 'db2')
+close_cA, close_cD = pywt.dwt(close, 'db2')
+close_dwt = pywt.idwt(close_cA, None, 'db2')
 
 po.init_notebook_mode(connected=True)
 
-trace_close = go.Scatter(x=date, y=close, name='close')
+trace_close = go.Scatter(
+    x=date,
+    y=close,
+    name='close'
+)
 trace_close_dwt = go.Scatter(
     x=date,
     y=close_dwt[:len(close)],
